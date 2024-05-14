@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import sys
+
+a = []
+for word in sys.stdin:
+    s = word.strip()
+    slow = s.lower()
+    if len(slow) == 5:
+        a.append(s)
+    print(slow[:-6])
